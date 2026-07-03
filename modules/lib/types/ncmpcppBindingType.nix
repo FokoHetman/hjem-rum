@@ -13,7 +13,7 @@ in (
         example = "p";
         apply = x:
           assert (!isNull x
-            || ''
+            || throw ''
               A binding for ncmpcpp wasn't properly defined, as it's missing the key or command its binded to.
               You need to specify a key or a command which'll run the specified actions.
             ''); x;
