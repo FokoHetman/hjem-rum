@@ -14,9 +14,9 @@ in (
         example = "p";
         apply = x:
           assert assertMsg (!isNull x) ''
-              A binding for ncmpcpp wasn't properly defined, as it's missing the key or command its binded to.
-              You need to specify a key or a command which'll run the specified actions.
-            ''; x;
+            A binding for ncmpcpp wasn't properly defined, as it's missing the key or command its binded to.
+            You need to specify a key or a command which'll run the specified actions.
+          ''; x;
       };
       actions = mkOption {
         type = nullOr (listOf str);
